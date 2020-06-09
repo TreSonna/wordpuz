@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <title>Document</title> -->
+  <title>Word Puzzle</title>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.5.1.js"></script>
@@ -12,7 +12,39 @@
 </head>
 
 <body>
+  <div class="container">
+    <h1>Enter a sentence and scramble it!</h1>
+  </div>
 
+  <div class="row">
+    <div class="col-md-3">
+      <p>Test test test test test Test test test test test Test test test test test Test test test test test Test test test test test Test test test test test Test test test test test Test test test test test Test test test test test Test test test
+        test test Test test test test test Test test test test test Test test test test test Test test test test test Test test test test test Test test test test test Test test test test test Test test test test test Test test test test test Test
+        test test test test Test test test test test Test test test test test Test test test test test Test test test test test Test test test test test Test test test test test Test test test test test Test test test test test Test test test test
+        test Test test test test test Test test test test test Test test test test test Test test test test test Test test test test test Test test test test test</p>
+    </div>
+
+
+    <div class="col-md-6">
+      <form id="formOne">
+
+        <div class="form-group">
+          <label for="Sentence">Input Sentence</label>
+          <input type="text" class="form-control" id="userInput">
+        </div>
+        <button class="btn" type="submit">Scramble Me!</button>
+      </form>
+      <p id="response"></p>
+    </div>
+
+
+    <div class="col-md-3">
+      <p>Test test test test test Test test test test test Test test test test test Test test test test test Test test test test test Test test test test test Test test test test test Test test test test test Test test test test test Test test test
+        test test Test test test test test Test test test test test Test test test test test Test test test test test Test test test test test Test test test test test Test test test test test Test test test test test Test test test test test Test
+        test test test test Test test test test test Test test test test test Test test test test test Test test test test test Test test test test test Test test test test test Test test test test test Test test test test test Test test test test
+        test Test test test test test Test test test test test Test test test test test Test test test test test Test test test test test Test test test test test</p>
+    </div>
+  </div>
 </body>
 
 </html>
