@@ -1,24 +1,3 @@
-// User inputs sentence 
-// Sentence -> string
-// all VOWELS replaces with "-"
-// original string hidden
-// Example:
-// String Input: "Believe you can and you're halfway there. Theodore Roosevelt"
-// Puzzle Output: "B-l--v- y-- c-n -nd y--'r- h-lfw-y th-r-. Th--d-r- R--s-v-lt"
-
-// input -> array -> split -> replace vowel with - ->combine -> ??
-
-// const userArray = []
-
-  // testArray.forEach(function(parameter) {
-    // let testArray = [];
-    // testArray.push($('input#userInput').val());
-
-    let testArrayWords = []
-    let testArray = []
-    let testArray2 = []
-
-
 $(document).ready(function() {
   $('#formOne').submit(function (event) {
     event.preventDefault();
@@ -27,7 +6,7 @@ $(document).ready(function() {
   console.log(testArray.toString());
 
   placeHolder = testArray.toString();
-
+ ///// This test has been brought to you by Epicodus!
   var xYa = /a/gi;
   var xYb = /e/gi;
   var xYc = /i/gi;
@@ -41,14 +20,13 @@ $(document).ready(function() {
   console.log(xYz)
   $('#response').show();
   $('#response').append(xYz);
+  // Th-s t-st h-s b--n br--ght t- y-- by -p-c-d-s!
+      });
+    });
 
 
 
-
-
-
-
-  // let testArrayWords = []
+      // let testArrayWords = []
     /// [ "This", "test", "has", "been", "brought", "to", "you", "by", "Epicodus!" ]
 
     // for (index = 0; index < testArray.length; index += 1) {
@@ -58,9 +36,6 @@ $(document).ready(function() {
 
 
         
-      });
-    });
-  
   
 
 
