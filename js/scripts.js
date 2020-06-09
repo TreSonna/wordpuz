@@ -8,28 +8,33 @@
 
 // input -> array -> split -> replace vowel with - ->combine -> ??
 
-const userArray = []
+// const userArray = []
 
 $(document).ready(function() {
   $('#formOne').submit(function (event) {
   
-    let testArray = [];
-    
-    testArray.push($('input#userInput').val());
+  // let testArray = [];
+  // testArray.push($('input#userInput').val());
 
-  alert(testArray);
-  console.log(testArray);
+  let testArray = ($('input#userInput').val()).split(" ");
+  let testArrayWords = []
+  ///// This test has been brought to you by Epicodus!
+  
+  // testArray.forEach(function(parameter) {
+    for (index = 0; index < testArray.length; index += 1) {
+      testArrayWords = testArray[index].split("");
+    }
 
-  testArray.forEach(function(parameter) {
     $('#response').append('test ' + testArray + ' TEST')
     $('#response').show();
-
-
-
-    
   });
-
-
     event.preventDefault();
   });
-});
+
+
+// take vowel, replace with dash "-"
+
+// take array, split, have a,e,i,o,u="-"
+// add ?
+// 
+// <span>e<span>
